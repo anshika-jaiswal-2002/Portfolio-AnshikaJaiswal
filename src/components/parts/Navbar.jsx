@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import NavbarButton from '../reusable/NavbarButton';
 import Sidebar from './Sidebar';
 
-import otherData from '../../data/otherData.json';
+import otherData from '../../data/OtherData.json';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

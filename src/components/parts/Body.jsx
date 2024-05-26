@@ -9,7 +9,7 @@ import Experiences from './BodySections/Experiences';
 import Education from './BodySections/Education';
 import Contact from './BodySections/Contact';
 
-import otherData from '../../data/otherData.json';
+import otherData from '../../data/OtherData.json';
 
 const Body = () => {
   return (
