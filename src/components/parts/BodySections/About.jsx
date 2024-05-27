@@ -21,15 +21,15 @@ const About = () => {
       <div
         className='mx-2 sm:mx-auto p-2 sm:p-4 font-Roboto
         sm:w-[655px] md:w-[790px] lg:w-[1004px]
-        bg-orange-500/10 hover:bg-orange-200 rounded-lg group/about
+        bg-orange-100/70 hover:bg-orange-200 rounded-lg group/about
         shadow-[0_0_5px_black] hover:shadow-[0_0_15px_black] transition duration-500'
       >
         {/* Heading */}
-        <div className='text-orange-500 group-hover/about:text-orange-900 font-bold text-2xl sm:text-4xl text-center underline underline-offset-4'>About Me</div>
+        <div className='text-orange-800 group-hover/about:text-orange-900 font-bold text-2xl sm:text-4xl text-center underline underline-offset-4'>About Me</div>
 
         {/* Content of About Section */}
         <Fade duration={revealDuration} delay={revealDelay}>
-          <div className=' group-hover/about:text-pink-950'>
+          <div className='text-orange-900 group-hover/about:text-orange-950'>
 
             {/* About Me Text */}
             <div className='mt-4 text-justify text-xs xsm:text-sm sm:text-lg md:text-2xl'>

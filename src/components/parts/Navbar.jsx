@@ -99,27 +99,15 @@ const Navbar = () => {
 
             {/* navbar options */}
             <div className='hidden md:flex flex-row space-x-2 h-fit tracking-tighter text-[16px]'>
-              {location === '' ? (
-                <>
-                  <NavbarButton myOnClick={() => { scrollToSection(otherData.navbarOptionLinks[0]) }} buttonName={otherData.navbarOptions[0]} />
-                  <NavbarButton myOnClick={() => { scrollToSection(otherData.navbarOptionLinks[1]) }} buttonName={otherData.navbarOptions[1]} />
-                  <NavbarButton myOnClick={() => { scrollToSection(otherData.navbarOptionLinks[2]) }} buttonName={otherData.navbarOptions[2]} />
-                  <NavbarButton myOnClick={() => { scrollToSection(otherData.navbarOptionLinks[3]) }} buttonName={otherData.navbarOptions[3]} />
-                  <NavbarButton myOnClick={() => { scrollToSection(otherData.navbarOptionLinks[4]) }} buttonName={otherData.navbarOptions[4]} />
-                  <NavbarButton myOnClick={() => { scrollToSection(otherData.navbarOptionLinks[5]) }} buttonName={otherData.navbarOptions[5]} />
-                  <NavbarButton myOnClick={() => { scrollToSection(otherData.navbarOptionLinks[6]) }} buttonName={otherData.navbarOptions[6]} />
-                </>
-              ) : (
-                <>
-                  <NavbarButton myOnClick={() => { goToHomeAndScroll(otherData.navbarOptionLinks[0]) }} buttonName={otherData.navbarOptions[0]} />
-                  <NavbarButton myOnClick={() => { goToHomeAndScroll(otherData.navbarOptionLinks[1]) }} buttonName={otherData.navbarOptions[1]} />
-                  <NavbarButton myOnClick={() => { goToHomeAndScroll(otherData.navbarOptionLinks[2]) }} buttonName={otherData.navbarOptions[2]} />
-                  <NavbarButton myOnClick={() => { goToHomeAndScroll(otherData.navbarOptionLinks[3]) }} buttonName={otherData.navbarOptions[3]} />
-                  <NavbarButton myOnClick={() => { goToHomeAndScroll(otherData.navbarOptionLinks[4]) }} buttonName={otherData.navbarOptions[4]} />
-                  <NavbarButton myOnClick={() => { goToHomeAndScroll(otherData.navbarOptionLinks[5]) }} buttonName={otherData.navbarOptions[5]} />
-                  <NavbarButton myOnClick={() => { goToHomeAndScroll(otherData.navbarOptionLinks[6]) }} buttonName={otherData.navbarOptions[6]} />
-                </>
-              )}
+              {otherData.navbarOptions.map((link, num) => (
+                <NavbarButton
+                  key={num}
+                  myOnClick={() => {
+                    location === '' ? scrollToSection(otherData.navbarOptionLinks[num]) : goToHomeAndScroll(otherData.navbarOptionLinks[num])
+                  }}
+                  buttonName={otherData.navbarOptions[num]}
+                />
+              ))}
             </div>
           </div>
 

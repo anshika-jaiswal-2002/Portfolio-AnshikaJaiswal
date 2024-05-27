@@ -52,7 +52,7 @@ const Contact = () => {
       <div
         className='mx-2 sm:mx-auto p-2 sm:p-4
         sm:w-[655px] md:w-[790px] lg:w-[1004px]
-        bg-purple-500/10 hover:bg-purple-200 rounded-lg group/contact
+        bg-purple-900/60 hover:bg-purple-200 rounded-lg group/contact
         shadow-[0_0_5px_black] hover:shadow-[0_0_15px_black] transition duration-500'
       >
 

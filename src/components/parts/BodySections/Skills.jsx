@@ -17,8 +17,8 @@ const Skills = () => {
     >
       {/* All the content */}
       <div className="flex flex-col mx-2 sm:mx-auto p-2 sm:p-4 gap-8 
-      sm:w-[655px] md:w-[790px] lg:w-[1004px] font-Roboto
-      bg-purple-500/10 hover:bg-purple-200 rounded-lg group/g1
+      sm:w-[645px] md:w-[780px] lg:w-[994px] font-Roboto
+      bg-purple-900/60 hover:bg-purple-200 rounded-lg group/g1
       shadow-[0_0_5px_black] hover:shadow-[0_0_15px_black] transition duration-500
       ">
         {/* Title of the section */}
@@ -34,7 +34,7 @@ const Skills = () => {
           <div className=' mx-auto rounded-3xl'>
             <Fade>
               <div
-                className=' grid grid-cols-3 gap-x-2 tracking-tighter text-h p-2 pr-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9 2xl:grid-cols-10 mx-auto'>
+                className='gap-x-2 tracking-tighter text-h p-2 pr-4 grid grid-cols-3 xsm:grid-cols-4 sm:grid-cols-6 md:grid-cols-7 mx-auto'>
                 {skills.map((skill, num) => (
                   <SkillCard key={num} skillImageSrc={skill[1]} skillName={skill[0]} />
                 ))}

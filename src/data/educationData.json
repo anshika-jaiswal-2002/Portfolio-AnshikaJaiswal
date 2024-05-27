@@ -12,14 +12,14 @@
       "status":"Pursuing"
     },
     {
-      "image":"./images/educationImages/img_jissp.jpeg",
-      "alt":"LPS",
+      "image":"./Images/EducationImages/img_school.png",
+      "alt":"Laxmi Public School",
       "name":" Laxmi Public school",
       "board":"CBSE",
-      "place":"UP",
-      "achieved":"10th and 12th",
-      "yearStart":"2018",
-      "yearEnd":"2020",
+      "place":"Uttar Pradesh",
+      "achieved":"Secondary and Higher Secondary",
+      "yearStart":"2005",
+      "yearEnd":"2021",
       "status":"Completed"
     }
   ]

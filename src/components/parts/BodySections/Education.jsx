@@ -15,7 +15,7 @@ const Education = () => {
       <div
         className='mx-2 sm:mx-auto p-2 sm:p-4 font-Roboto
         sm:w-[655px] md:w-[790px] lg:w-[1004px]
-        bg-orange-500/10 hover:bg-orange-200 rounded-lg group/edu1
+        bg-orange-100/70 hover:bg-orange-200 rounded-lg group/edu1
         shadow-[0_0_5px_black] hover:shadow-[0_0_15px_black] transition duration-500'
       >
 

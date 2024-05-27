@@ -22,7 +22,7 @@ const Home = () => {
     >
 
       {/* The welcome text */}
-      <div className='justify-center font-AveriaLibre '>
+      <div className='justify-center font-AveriaLibre'>
 
         {/* Upper part - 4 texts and image */}
         <div className='flex flex-row w-fit mx-auto items-center'>
@@ -49,14 +49,14 @@ const Home = () => {
 
             <Slide direction='down'><Fade>
               <div className="text-4xl sm:text-7xl md:text-8xl lg:text-8xl 
-              font-semibold text-fuchsia-500 mt-2">
+              font-semibold text-fuchsia-800 mt-2 font-kalam bg-black/30 rounded-full ">
                 <BubbleText text={profileData.name.firstName} />
               </div>
             </Fade></Slide>
 
             <Slide direction='down'><Fade>
               <div className="text-4xl sm:text-7xl md:text-8xl lg:text-8xl 
-              font-semibold text-fuchsia-500 mt-2">
+              font-semibold text-fuchsia-900 mt-2 font-kalam bg-black/30 rounded-full">
                 <BubbleText text={profileData.name.lastName} />
               </div>
             </Fade></Slide>

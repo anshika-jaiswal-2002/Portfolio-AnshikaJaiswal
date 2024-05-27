@@ -15,7 +15,7 @@ const Body = () => {
   return (
     <div className="relative z-20 ">
 
-      <div className='flex bg-black bg-opacity-80 text-slate-200 font-Roboto justify-between'>
+      <div className='flex bg-black bg-opacity-30 text-slate-200 font-Roboto justify-between'>
         {/* content of page */}
         <div className='w-screen' id={otherData.navbarOptionLinks[0]}>
 
