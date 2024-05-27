@@ -13,13 +13,13 @@
     },
     {
       "image":"./images/educationImages/img_jissp.jpeg",
-      "alt":"JISSP",
-      "name":"Some school",
+      "alt":"LPS",
+      "name":" Laxmi Public school",
       "board":"CBSE",
       "place":"UP",
-      "achieved":"Diploma in Computer Science And Technology",
-      "yearStart":"2019",
-      "yearEnd":"2021",
+      "achieved":"10th and 12th",
+      "yearStart":"2018",
+      "yearEnd":"2020",
       "status":"Completed"
     }
   ]
