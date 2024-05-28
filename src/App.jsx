@@ -27,7 +27,7 @@ function App() {
         className='w-0 h-0'
         ref={playerRef}
         loop
-        volume={0.07}
+        volume={0.12}
         src={'./Music/music2.mp3'}
         customAdditionalControls={[]}
         customVolumeControls={[]}
