@@ -13,17 +13,29 @@ const Footer = () => {
 
   return (
     <div className="relative z-20">
-      <div className="bg-orange-500 border-t-2 border-purple-500 h-fit ">
-        <div className='grid grid-cols-1 sm:grid-cols-2 text-center text-purple-950 items-center p-4'>
-          <div className='flex flex-col text-lg sm:text-xl'>
+      <div className="bg-orange-500 border-t-2 border-purple-500 h-fit">
+        <div className='grid grid-cols-1 gap-2 sm:gap-1 sm:grid-cols-2 text-center text-purple-950 items-center py-4 px-1 sm:px-4 lg:w-[1014px] mx-auto'>
+
+          {/* Part 1 */}
+          <div className='flex flex-col gap-2 text-lg sm:text-xl'>
+
+            {/* Thank you note */}
             <div className='font-bold'>Thank you for visiting my Portfolio</div>
-            <button 
+
+            {/* Gmail button */}
+            <button
               onClick={() => redirectToGmail(profileData.email_KIIT)}
               className='bg-purple-950 text-orange-500 w-fit mx-auto px-4 py-2 rounded-lg'
             >Gmail: {profileData.email_gmail}</button>
+
           </div>
+
+          {/* Part 2 */}
           <div className='flex flex-col gap-2'>
+
+            {/* Section heading */}
             <p className='text-lg sm:text-xl'>Connect me over my socials</p>
+
             {/* Contact Icons */}
             <div className="flex flex-row flex-wrap gap-2 mx-auto">
 
@@ -53,6 +65,18 @@ const Footer = () => {
                 </div>
               </button>
 
+              {/* Hackerrank button */}
+              <button
+                onClick={() => { window.open(`${profileData.links.link_hackerrank}`, '_blank') }}
+                className=''
+              >
+                <div className="bg-purple-900 hover:bg-purple-600 w-8 h-8 sm:w-12 sm:h-12 rounded-full p-1 sm:p-3 hover:p-[2px] sm:hover:p-2 transition-all duration-300">
+                  <svg className='rounded-full text-purple-100' xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" viewBox="0 0 24 24" id="hackerrank">
+                    <path fill="#2FC363" d="M11.999,0C10.626,0,2.195,4.818,1.514,6c-0.683,1.182-0.687,10.819,0,12c0.685,1.181,9.114,6,10.485,6c1.37,0,9.8-4.823,10.487-6c0.687-1.176,0.687-10.83,0-12C21.799,4.83,13.371,0,11.999,0L11.999,0z M14.84,19.415v0.002c-0.188,0-1.938-1.677-1.8-1.814c0.041-0.041,0.296-0.069,0.832-0.086c0-1.23,0.027-3.215,0.044-4.046c0.002-0.095-0.021-0.161-0.021-0.273h-3.787c0,0.333-0.022,1.697,0.064,3.416c0.012,0.213-0.074,0.279-0.271,0.278c-0.48-0.001-0.96-0.005-1.441-0.004c-0.194,0-0.278-0.073-0.271-0.286c0.043-1.567,0.141-3.938-0.008-9.969V6.483C7.724,6.468,7.404,6.438,7.364,6.397C7.225,6.26,9,4.583,9.187,4.583c0.188,0,1.951,1.677,1.813,1.814c-0.041,0.041-0.374,0.07-0.795,0.086v0.148c-0.113,1.207-0.096,3.731-0.124,4.941h3.803c0-0.214,0.019-1.629-0.057-3.922c-0.005-0.159,0.046-0.242,0.199-0.244c0.524-0.004,1.049-0.006,1.574-0.003c0.164,0.001,0.217,0.08,0.214,0.252c-0.173,8.967-0.032,8.341-0.032,9.86c0.42,0.016,0.796,0.045,0.838,0.086C16.757,17.737,15.027,19.415,14.84,19.415L14.84,19.415z"></path><path fill="#DEDEDE" d="M9.187,4.583C9,4.583,7.225,6.26,7.364,6.397c0.041,0.041,0.36,0.07,0.817,0.086v0.149c0.149,6.031,0.051,8.402,0.008,9.969c-0.007,0.214,0.077,0.286,0.271,0.286c0.067,0,0.134,0,0.201,0c0.413,0,0.826,0.003,1.24,0.004c0.001,0,0.003,0,0.004,0c0.194,0,0.279-0.067,0.268-0.278c-0.087-1.719-0.064-3.083-0.064-3.416H12v-1.626h-1.919c0.028-1.209,0.011-3.734,0.124-4.941V6.483C10.626,6.468,10.959,6.438,11,6.397C11.138,6.26,9.374,4.583,9.187,4.583L9.187,4.583z"></path><path fill="#29AA56" d="M11.999,0C10.626,0,2.195,4.818,1.514,6c-0.683,1.182-0.687,10.819,0,12c0.685,1.181,9.114,6,10.485,6l0,0H12V13.198h-1.892c0,0.333-0.022,1.697,0.064,3.416c0.012,0.211-0.073,0.278-0.268,0.278c-0.001,0-0.002,0-0.004,0c-0.413-0.001-0.826-0.004-1.24-0.004c-0.067,0-0.134,0-0.201,0c-0.194,0-0.278-0.073-0.271-0.286c0.043-1.567,0.141-3.938-0.008-9.969V6.483C7.724,6.468,7.404,6.438,7.364,6.397C7.225,6.26,9,4.583,9.187,4.583c0.188,0,1.951,1.677,1.813,1.814c-0.041,0.041-0.374,0.07-0.795,0.086v0.148c-0.113,1.207-0.096,3.731-0.124,4.941H12L11.999,0L11.999,0L11.999,0z"></path>
+                  </svg>
+                </div>
+              </button>
+
               {/* Instagram Button */}
               <button
                 onClick={() => { window.open(`${profileData.links.link_instagram}`, '_blank') }}
@@ -68,6 +92,14 @@ const Footer = () => {
 
             </div>
           </div>
+        </div>
+        <div className='text-[11px] text-yellow-900 sm:text-sm text-center   w-hit'>
+          <button
+            className='hover:bg-orange-400 cursor-default flex gap-1 mx-auto'
+          >
+            <span>Website developed by</span>
+            <span className='cursor-pointer hover:bg-black' onClick={() => { window.open(`https://bodhisatta1999.netlify.app/`, '_blank') }}>🐱</span>
+          </button>
         </div>
       </div>
     </div>

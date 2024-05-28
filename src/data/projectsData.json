@@ -1,0 +1,31 @@
+{
+	"Projects": [
+		{
+			"id": 1,
+			"title": "Leprosy Analyzer",
+			"domain":"Machine Learning with Computer Vision",
+			"link":"https://github.com/anshika-jaiswal-2002/Leprosy--Analyzer",
+			"description_short": "The leprosy Analyzer is a Python-based project designed to assist medical professionals in the analysis and detection of leprosy, a chronic infectious disease caused by Mycobacterium laprae. This project leverages the power of computer vision and image processing techniques to aid in the early diagnosis and treatment of leprosy",
+			"images": [
+				"./Images/ProjectImages/project1_leprosy/1.jpeg",
+				"./Images/ProjectImages/project1_leprosy/2.jpeg",
+				"./Images/ProjectImages/project1_leprosy/3.jpeg"
+			],
+			"thumbnail": "./Images/ProjectImages/project1_leprosy/1.jpeg"
+		},
+		{
+			"id": 2,
+			"title": "My Personal Web Portfolio",
+			"domain":"Web Development",
+			"link":"https://github.com/anshika-jaiswal-2002/Portfolio-AnshikaJaiswal",
+			"description_short": "A personal portfolio website made with React Vite using TailwindCss. My Personal and professional details like skills, education, projects, experiences are added here. Hosted on NETLIFY",
+			"images": [
+				"./Images/ProjectImages/project2_portfolio/1.png",
+				"./Images/ProjectImages/project2_portfolio/2.png",
+				"./Images/ProjectImages/project2_portfolio/3.png",
+				"./Images/ProjectImages/project2_portfolio/4.png"
+			],
+			"thumbnail": "./Images/ProjectImages/project2_portfolio/1.png"
+		}
+	]
+}

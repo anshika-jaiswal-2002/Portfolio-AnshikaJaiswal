@@ -20,10 +20,10 @@ const Education = () => {
       >
 
         {/* Section Title */}
-        <div className='text-orange-500 group-hover/edu1:text-orange-900 font-bold text-2xl sm:text-4xl text-center underline underline-offset-4'>My Education</div>
+        <div className='text-orange-800 group-hover/edu1:text-orange-900 font-bold text-2xl sm:text-4xl text-center underline underline-offset-4'>My Education</div>
 
         {/* Section Body */}
-        <div className='flex flex-col text-center gap-2 sm:gap-4 mt-8'>
+        <div className='flex flex-col text-center gap-2 sm:gap-4 mt-4'>
           {educationData.data.map((e, num) => (
             <Fade key={num} delay={100}><EducationCard props={e} /></Fade>
           ))}

@@ -16,7 +16,7 @@ const Skills = () => {
       className='bg-purple-500/20 p-2'
     >
       {/* All the content */}
-      <div className="flex flex-col mx-2 sm:mx-auto p-2 sm:p-4 gap-8 
+      <div className="flex flex-col mx-2 sm:mx-auto p-2 sm:p-4 gap-4 
       sm:w-[645px] md:w-[780px] lg:w-[994px] font-Roboto
       bg-purple-900/60 hover:bg-purple-200 rounded-lg group/g1
       shadow-[0_0_5px_black] hover:shadow-[0_0_15px_black] transition duration-500
