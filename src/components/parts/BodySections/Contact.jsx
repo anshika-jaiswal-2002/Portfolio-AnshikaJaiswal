@@ -19,6 +19,15 @@ const Contact = () => {
   // Function to submit mail using formspree
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (state.email.trim() === '' || state.name.trim() === ''){
+      alert("You need to enter a name and email for sending a contact message!");
+      return;
+    }
+    if (state.message.trim().length <2){
+      alert("Invalid Message | You need to enter a message of atleast 2 characters");
+      return;
+    }
+
     fetch("https://formspree.io/f/xyyralpw", {
       method: 'POST',
       body: JSON.stringify(state),

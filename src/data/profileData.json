@@ -13,18 +13,18 @@
   "about1":"Hello, I am Anshika Jaiswal currently in 7th Semester (as of ",
   "about2":"), pursuing my BTech in Computer Science from KIIT University, Bhubaneshwar, Odisha.",
   "about3": [
-      "hello  "
+      "I was an active member of the KIIT Food Society, where I demonstrated my exceptional cooking skills, of which I am particularly proud. In the field of technology, I am a Machine Learning enthusiast. Along with my friends, I developed the 'Leprosy-Analyzer,' a model designed to detect skin diseases, as part of our sixth semester Minor Project. Additionally, I have experience in web development and have recently begun working with React and Tailwind CSS.",
+      "I have a deep appreciation for Indian cinema, particularly comedy and romantic genres. I am an avid fan of Arijit Singh and enjoy calm and soft Hindi music. Additionally, I have a passion for traveling, eating, and cooking."
   ],
-  "display_image": "./Images/MyImages/Anshika4.png",
+  "display_image": "./Images/MyImages/Anshika7.png",
   "links": [
-    {"link_instagram": ""},
+    {"link_instagram": "https://www.instagram.com/ansh.ika8155/"},
     {"link_facebook": ""},
-    {"link_linkedin": ""},
+    {"link_linkedin": "http://www.linkedin.com/in/anshika-jaiswal-8b4451237"},
     {"link_spotify": ""},
     {"link_twitter": ""},
     {"link_github": "https://github.com/anshika-jaiswal-2002"},
     {"link_leetcode": ""},
-    {"link_codeforces": ""},
-    {"link_": ""}
+    {"link_codeforces": ""}
   ]
 }
