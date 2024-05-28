@@ -66,6 +66,21 @@ const About = () => {
                 </div>
               </Fade></Zoom>
 
+              {/* Primary Email */}
+              <Zoom duration={revealDuration}><Fade delay={revealDelay} duration={revealDuration}>
+                <div className='mb-2 '>
+                  <span className='mr-2 font-bold'>Secondary Email:</span>
+                  <span>
+                    <button
+                      onClick={() => redirectToGmail(profileData.email_gmail2)}
+                      className='hover:underline'
+                    >
+                      {profileData.email_gmail2}
+                    </button>
+                  </span>
+                </div>
+              </Fade></Zoom>
+
               {/* KIIT Email */}
               <Zoom duration={revealDuration}><Fade delay={revealDelay} duration={revealDuration}>
                 <div className='mb-2'>

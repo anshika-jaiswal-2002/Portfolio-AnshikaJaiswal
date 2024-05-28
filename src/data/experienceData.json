@@ -1,0 +1,15 @@
+{
+  "data": [
+    {
+      "type": "KIIT Food Society",
+      "name": "Keurig KIIT",
+      "image":"./Images/ExperienceImages/Experience1/1.png",
+      "domain": "Food Society",
+      "link": "https://ksac.kiit.ac.in/societies/keurig/",
+      "certificate": "https://drive.google.com/file/d/1Hk9xriqFAT1e41FES2TaaQphcN2oGSuG/view?usp=sharing",
+      "description": "KIIT Food Society - Youth-20 Consultation at Keurig",
+      "start": "2022",
+      "end": "April, 2024"
+    }
+  ]
+}

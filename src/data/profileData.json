@@ -4,9 +4,10 @@
       "lastName":"Jaiswal"
   },
   "email_gmail": "jaiswalanshika071@gmail.com",
+  "email_gmail2": "anshujaiswal1703@gmail.com",
   "email_KIIT": "21052961@kiit.ac.in",
   "resume": "/error",
-  "home": "Varanasi, Uttar Pradesh, PIN-232101",
+  "home": "Deen Dayal Nagar, Uttar Pradesh, PIN-232101",
   "year": {
       "$date":"1970-01-01T00:00:00.000+00:00"
   },

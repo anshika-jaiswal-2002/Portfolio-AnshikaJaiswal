@@ -17,16 +17,23 @@ const Footer = () => {
         <div className='grid grid-cols-1 gap-2 sm:gap-1 sm:grid-cols-2 text-center text-purple-950 items-center py-4 px-1 sm:px-4 lg:w-[1014px] mx-auto'>
 
           {/* Part 1 */}
-          <div className='flex flex-col gap-2 text-lg sm:text-xl'>
+          <div className='flex flex-col gap-1 text-lg sm:text-xl'>
 
             {/* Thank you note */}
             <div className='font-bold'>Thank you for visiting my Portfolio</div>
 
             {/* Gmail button */}
-            <button
-              onClick={() => redirectToGmail(profileData.email_KIIT)}
-              className='bg-purple-950 text-orange-500 w-fit mx-auto px-4 py-2 rounded-lg'
-            >Gmail: {profileData.email_gmail}</button>
+            <div className='bg-purple-950 text-orange-500 w-fit mx-auto px-4 py-2 rounded-lg flex flex-col'>
+              <p onClick={() => redirectToGmail(profileData.email_gmail)}
+                className='hover:underline underline-offset-2 cursor-pointer'
+              >{profileData.email_gmail}</p>
+              <p onClick={() => redirectToGmail(profileData.email_gmail2)}
+                className='hover:underline underline-offset-2 cursor-pointer'
+              >{profileData.email_gmail2}</p>
+              <p onClick={() => redirectToGmail(profileData.email_KIIT)}
+                className='hover:underline underline-offset-2 cursor-pointer'
+              >{profileData.email_KIIT}</p>
+            </div>
 
           </div>
 
@@ -97,7 +104,7 @@ const Footer = () => {
           <button
             className='hover:bg-orange-400 cursor-default flex gap-1 mx-auto'
           >
-            <span>Website developed by</span>
+            <span>Website development taken help from</span>
             <span className='cursor-pointer hover:bg-black' onClick={() => { window.open(`https://bodhisatta1999.netlify.app/`, '_blank') }}>🐱</span>
           </button>
         </div>

@@ -32,7 +32,7 @@ const BackgroundImages = ({pauseTime}) => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-full overflow-hidden z-0 bg-black">
+    <div className="fixed top-10 left-0 w-full h-full overflow-hidden z-0 bg-black">
       <div className="scrolling-images flex" ref={containerRef}>
         {BackgroundImagesData.backgroundImages.map((image, index) => (
           <img src={image} alt={`Image ${index + 1}`} key={index} className="w-auto h-full" />
