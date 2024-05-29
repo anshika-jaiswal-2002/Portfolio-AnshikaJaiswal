@@ -51,11 +51,11 @@ const ProjectCard = ({ projects }) => {
   const getRightIndex = () => (imageIndex + 1) % projectImages.length;
 
   return (
-    <div className='group/g2 flex flex-col gap-2'>
+    <div className='group/g2 flex flex-col gap-2 sm:gap-4'>
 
       {projects.map((project, num) => (
         <Zoom key={num} delay={200} duration={800}><Fade duration={1000}>
-          <div className="relative my-1 xsm:my-2 rounded-2xl border-2 border-orange-500 hover:border-orange-950 bg-orange-400/50 group/g3 group-hover/g2:bg-orange-400/70 transition-all duration-300 shadow-[0_0_10px_orange] shadow-orange-200 hover:shadow-[0_0_30px_purple] hover:shadow-orange-600">
+          <div className="relative rounded-2xl border-2 border-orange-500 hover:border-orange-950 bg-orange-400/50 group/g3 group-hover/g2:bg-orange-400/70 transition-all duration-300 shadow-[0_0_10px_orange] shadow-orange-200 hover:shadow-[0_0_30px_purple] hover:shadow-orange-600">
 
             {/* Project Details */}
             <div

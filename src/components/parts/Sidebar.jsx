@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { scroller } from 'react-scroll';
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import { useLocation, useNavigate } from 'react-router-dom';
 import NavbarButton from '../reusable/NavbarButton';
 import otherData from '../../data/OtherData.json';
@@ -42,8 +42,8 @@ const Sidebar = ({ onParameterChange }) => {
   };
 
   return (
-    <div className={`md:hidden fixed w-screen top-20 z-30  transition-all duration-700 ease-in-out opacity-100 bg-purple-900/90 text-white border-b-2 border-orange-500 flex justify-around p-4 ${sidebarButtonClicked ? 'opacity-0' : 'opacity-100'}`}>
-      <Fade duration={700} className=''>
+    <div className={`md:hidden fixed w-screen top-20 z-30  transition-all duration-500 ease-in-out bg-purple-950/90 text-white border-b-2 border-orange-500 flex justify-around p-4 ${sidebarButtonClicked ? '-translate-y-10 opacity-0' : 'opacity-100'}`}>
+      <Slide direction='down'><Fade duration={700} delay={300} className=''>
         <div className='grid grid-cols-2 xsm:grid-cols-3 sm:grid-cols-6 gap-x-4 gap-y-4 font-AveriaLibre text-xl'>
           {location === '' ? (
             <>
@@ -67,7 +67,7 @@ const Sidebar = ({ onParameterChange }) => {
             </>
           )}
         </div>
-      </Fade>
+      </Fade></Slide>
     </div>
   );
 };

@@ -49,7 +49,7 @@ const Bubble = ({ myText }) => {
   }, []);
 
   return (
-    <h2 className="hover-text font-thin text-indigo-300">
+    <h2 className="hover-text font-thin text-purple-300">
       <Text>{myText}</Text>
     </h2>
   );
@@ -60,7 +60,7 @@ const Text = ({ children }) => {
     <span>
       {children.split("").map((child, idx) => (
         <span
-          className="transition duration-350 ease-in-out font-thin text-fuchsia-500"
+          className="transition duration-350 ease-in-out font-thin text-pink-500"
           key={idx}
         >
           {child}

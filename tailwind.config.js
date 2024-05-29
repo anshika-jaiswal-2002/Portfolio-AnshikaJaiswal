@@ -25,12 +25,9 @@ module.exports = {
       },
       fontFamily: {
         'Parisienne': ["Parisienne", "cursive"],
-        'kalam': ['Kalam', 'cursive'],
-        'Caveat': ["Caveat", "cursive"],
-        'Charm': ["Charm", "cursive"],
-        'Rancho': ["Rancho", "cursive"],
         'AveriaLibre': ["Averia Libre", "system-ui"],
         'Roboto': ["Roboto", "sans-serif"],
+        'DancingScript': ["Dancing Script", "cursive"],
       },
       keyframes: {
         heartbeat: {

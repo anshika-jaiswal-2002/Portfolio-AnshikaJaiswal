@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { scroller } from 'react-scroll';
+import { Slide } from 'react-awesome-reveal';
 import { useLocation, useNavigate } from 'react-router-dom';
 import NavbarButton from '../reusable/NavbarButton';
 import Sidebar from './Sidebar';
@@ -44,7 +45,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="sticky top-0 z-30 flex bg-purple-900  h-20 text-slate-200 justify-between border-b-2 border-orange-500 text-xl font-AveriaLibre">
+      <div className="sticky top-0 z-30 flex bg-purple-950  h-20 text-slate-200 justify-between border-b-2 border-orange-500 text-xl font-AveriaLibre">
         <div className=" flex flex-row justify-between mx-auto w-[1014px] ">
 
           {/* Left part */}
@@ -66,8 +67,10 @@ const Navbar = () => {
                 onClick={toggleMenu}
                 className="text-orange-500 focus:outline-none relative"
               >
+
+                {/* Hamburger icon */}
                 <svg
-                  className={`w-10 h-10 transform transition-transform duration-300 ${isOpen ? 'opacity-0' : 'opacity-100'}`}
+                  className={`w-10 h-10 transform transition-all duration-500 ease-in-out ${isOpen ? 'opacity-0 rotate-180' : 'opacity-100'}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -80,8 +83,10 @@ const Navbar = () => {
                     d="M4 6h16M4 12h16m-7 6h7"
                   ></path>
                 </svg>
+
+                {/* Cross icon */}
                 <svg
-                  className={`w-10 h-10 absolute top-0 left-0 transform transition-transform duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+                  className={`w-10 h-10 absolute top-0 left-0 transform transition-all duration-500 ease-in-out ${isOpen ? 'opacity-100' : 'rotate-90 opacity-0'}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -94,6 +99,7 @@ const Navbar = () => {
                     d="M6 18L18 6M6 6l12 12"
                   ></path>
                 </svg>
+
               </button>
             </div>
 
@@ -115,7 +121,9 @@ const Navbar = () => {
       </div>
 
       {/* Transperant gradient - change the height acordingly*/}
-      <div className="fixed top-20 z-30 h-32 w-full bg-gradient-to-b from-purple-950 via-purple-900/60 to-transparent pointer-events-none"></div>
+      <div className="fixed top-20 z-30 h-32 w-full bg-gradient-to-b from-purple-950 via-purple-900/60 to-transparent transition-all pointer-events-none"></div>
+
+      {/* Sidebar */}
       {isOpen && (<Sidebar onParameterChange={onSidebarButtonClick} />)}
     </>
   )

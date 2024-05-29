@@ -15,7 +15,7 @@ const BackgroundImages = ({pauseTime}) => {
       const firstImage = container.firstChild;
       const firstImageWidth = firstImage.getBoundingClientRect().width;
 
-      container.style.transition = 'transform 4s linear';
+      container.style.transition = 'transform 5s linear';
       container.style.transform = `translateX(-${firstImageWidth}px)`;
 
       setTimeout(() => {
@@ -23,7 +23,7 @@ const BackgroundImages = ({pauseTime}) => {
         container.style.transform = 'translateX(0)';
         container.appendChild(firstImage);
         isAnimating = false;
-      }, 4000); // The duration here should match the transition duration
+      }, 5000); // The duration here should match the transition duration
     };
 
     const intervalId = setInterval(animate, pauseTime); // Adjust this interval to control the frequency of image shifts
