@@ -11,7 +11,7 @@
   "year": {
       "$date":"1970-01-01T00:00:00.000+00:00"
   },
-  "about1":"Hello, I am Anshika Jaiswal currently in 7th Semester (as of ",
+  "about1":"Hello, I am Anshika Jaiswal currently in 8th Semester (as of ",
   "about2":"), pursuing my BTech in Computer Science from KIIT University, Bhubaneshwar, Odisha.",
   "about3": [
       "I was an active member of the KIIT Food Society, where I demonstrated my exceptional cooking skills, of which I am particularly proud. In the field of technology, I am a Machine Learning enthusiast. Along with my friends, I developed the 'Leprosy-Analyzer,' a model designed to detect skin diseases, as part of our sixth semester Minor Project. Additionally, I have experience in web development and have recently begun working with React and Tailwind CSS.",
@@ -20,9 +20,12 @@
   "display_image": "./Images/MyImages/Anshika9.png",
   "links": {
     "link_instagram": "https://www.instagram.com/ansh.ika8155/",
+    "link_leetcode": "https://www.leetcode.com/u/Anshika_2002",
+    "link_codechef": "https://www.codechef.com/users/anshika_kiit",
     "link_hackerrank": "https://www.hackerrank.com/profile/h21052961",
     "link_linkedin": "http://www.linkedin.com/in/anshika-jaiswal-8b4451237",
     "link_github": "https://github.com/anshika-jaiswal-2002",
+    "link_youtube": "https://open.spotify.com/user/31qb3lmj5l6t367ak7kcx5x6luy4",
     "link_spotify": "https://open.spotify.com/user/31qb3lmj5l6t367ak7kcx5x6luy4"
   }
 }
